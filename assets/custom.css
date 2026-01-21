@@ -6,8 +6,8 @@
 
 @font-face {
     font-family: 'beIN Normal';
-    src: url('../beINNormal.woff2') format('woff2'),
-        url('../beINNormal.woff') format('woff');
+    src: url('../assets/beINNormal.woff2') format('woff2'),
+        url('../assets/beINNormal.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -557,7 +557,9 @@ input[type=checkbox]:checked {
 
         .marquee-content-ltr {
             display: flex;
-            animation: scroll-ltr 40s linear infinite;
+            /* animation: scroll-ltr 40s linear infinite; */
+            animation: scroll-ltr 60s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+
             width: fit-content;
         }
 
@@ -574,7 +576,9 @@ input[type=checkbox]:checked {
         
         .marquee-content-rtl {
             display: flex;
-            animation: scroll-rtl 40s linear infinite;
+            /* animation: scroll-rtl 40s linear infinite; */
+            animation: scroll-rtl 60s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+
             width: fit-content;
         }
 
