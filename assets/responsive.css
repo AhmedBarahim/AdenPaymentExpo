@@ -1,0 +1,395 @@
+/* General CSS Styles */
+
+/* @media (min-width: 993px) {
+    .btn-website {
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        border-radius: 0.5rem;
+    }
+} */
+
+@media (max-width: 768px) {
+    .btn-website {
+        padding: 0.15rem 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: var(--swiper-navigation-size) / 2 !important;
+    }
+}
+
+/* Navbar */
+
+@media (min-width: 1201px) {
+    #be-agent-btn {
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        border-radius: 0.5rem;
+    }
+
+    .main-navbar .active::after,
+    .main-navbar .active:focus::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: var(--accent-color);
+        transition: width .3s;
+    }
+
+    .underline-animation {
+        display: inline-block;
+        color: var(--accent-color);
+        text-decoration: none;
+    }
+
+    .underline-animation::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 4px;
+        background: var(--accent-color);
+        transition: width .3s;
+    }
+
+    .underline-animation:hover::after {
+        width: 100%;
+        transition: width .3s;
+    }
+}
+
+@media (max-width: 992px) {
+
+    #header img {
+        width: 120px;
+    }
+
+    .lang-btn a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .navbar-rounded {
+        border-radius: var(--bs-border-radius-lg) !important;
+    }
+
+    #close-menu::before {
+        --bs-bg-opacity: 1;
+        background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+        padding: 0.1rem 0.25rem;
+        border-radius: var(--bs-border-radius) !important;
+    }
+}
+
+/* Image Carousel
+--------------------------------------------------------------*/
+
+@media (max-width: 1200px) {
+    .img-carousel img {
+        height: 30vw;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .img-carousel img {
+        height: 35vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-carousel img {
+        height: 40vw;
+    }
+
+    .img-text h1 {
+        font-size: 3rem;
+
+    }
+
+    .img-text h3 {
+        font-size: 1.2rem;
+    }
+
+    /*
+    .carousel-control-next-icon {
+        margin-bottom:1rem;
+     }
+    .carousel-control-next-icon::after {
+        font-size: 1.5rem;
+    }
+
+    .carousel-control-prev-icon {
+        margin-bottom:1rem;
+     }
+    .carousel-control-prev-icon::after {
+        font-size: 1.5rem;
+    } */
+}
+
+@media (max-width: 576px) {
+    .img-carousel img {
+        height: 50vw;
+    }
+
+    .img-text h1 {
+        font-size: 1.7rem;
+
+    }
+
+    .img-text h3 {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Start AboutUs Area
+==================================================*/
+
+@media (min-width: 769px) {
+    #aboutUs:lang(ar) {
+        background: rgb(244, 201, 40);
+        background: linear-gradient(90deg, rgba(244, 201, 40, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    }
+
+    #aboutUs:lang(en) {
+        background: rgb(244, 201, 40);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(244, 201, 40, 1) 100%);
+    }
+
+}
+
+@media (max-width: 768px) {
+    #aboutUs:lang(ar) {
+        background: rgb(244, 201, 40);
+        background: linear-gradient(90deg, rgba(244, 201, 40, 1) 0%, rgba(255, 255, 255, 1) 200%);
+    }
+
+    #aboutUs:lang(en) {
+        background: rgb(244, 201, 40);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(244, 201, 40, 1) 200%);
+    }
+}
+
+
+/* End AboutUs Area
+==================================================*/
+
+/* --------------------------------------------------*/
+/* Availabilty Section */
+@media (max-width: 992px) {
+    .yemen-map {
+        width: 75vw;
+    }
+}
+
+@media (min-width: 993px) {
+    .yemen-map {
+        width: 35vw;
+    }
+}
+
+
+
+/* Box News
+--------------------------------------------------------------*/
+
+
+@media (max-width: 992px) {
+    .news-featured-container {
+        flex-direction: column;
+    }
+
+    .news-featured-img-wrapper {
+        flex: 0 0 auto;
+    }
+
+    .news-featured-content {
+        flex: 0 0 auto;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .news-img:lang(ar) {
+        border-bottom-right-radius: var(--bs-border-radius) !important;
+        border-top-right-radius: var(--bs-border-radius) !important;
+        height: -webkit-fill-available;
+    }
+
+    .news-card:lang(ar) {
+        border-top-left-radius: var(--bs-border-radius) !important;
+        border-bottom-left-radius: var(--bs-border-radius) !important;
+        height: -webkit-fill-available;
+    }
+
+    .news-img:lang(en) {
+        border-bottom-left-radius: var(--bs-border-radius) !important;
+        border-top-left-radius: var(--bs-border-radius) !important;
+        height: -webkit-fill-available;
+    }
+
+    .news-card:lang(en) {
+        border-top-right-radius: var(--bs-border-radius) !important;
+        border-bottom-right-radius: var(--bs-border-radius) !important;
+        height: -webkit-fill-available;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .news-img {
+        border-top-right-radius: var(--bs-border-radius) !important;
+        border-top-left-radius: var(--bs-border-radius) !important;
+        height: -webkit-fill-available;
+    }
+
+    .news-card {
+        border-bottom-left-radius: var(--bs-border-radius) !important;
+        border-bottom-right-radius: var(--bs-border-radius) !important;
+        height: -webkit-fill-available;
+    }
+
+}
+
+
+/* Footer
+--------------------------------------------------------------*/
+
+/* @media (max-width: 768px) {
+    .social-links li {
+        margin-right: 0.5rem;
+        width: 25px;
+        height: 25px;
+        line-height: 1.8rem;
+        font-size: 0.8rem;
+        margin-top: 5px;
+    }
+
+  } */
+
+/* Contact
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+    .breadcumb-nav {
+        width: 75%;
+    }
+}
+
+@media (max-width: 576px) {
+    #contact i {
+        font-size: 1.4rem;
+        height: 40px;
+        width: 40px;
+        padding: 0.6rem 0 0 0;
+        border-radius: 50%;
+    }
+}
+
+/* News
+--------------------------------------------------------------*/
+
+@media (min-width: 1401px) {
+    .margin-news {
+        margin: 0px 8rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    .margin-news {
+        margin: 0px 2.4rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .margin-news {
+        margin: 0px 0px;
+        padding: 0px 1rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .margin-news {
+        margin: 0px 0px;
+        padding: 0px 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .margin-news {
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    #news img {
+        width: auto;
+        height: auto;
+    }
+
+    #news p {
+        font-size: 1.15rem;
+    }
+}
+
+/* Post Page
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+    .post-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .post-body {
+        padding: 1.5rem;
+    }
+
+    .post-title {
+        font-size: 1.5rem;
+    }
+
+    .post-content {
+        font-size: 1rem;
+    }
+
+    .post-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
+
+/* Branch Form Portal
+--------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+    #branchForm button {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* About Us Page
+==================================================*/
+/* @media (max-width: 991px) {
+    .testimony:lang(ar) {
+        height: 32rem;;
+    }
+    .testimony:lang(en) {
+        height: 39rem;
+    }
+}
+@media (max-width: 768px) {
+    .testimony:lang(ar) {
+        height: 41rem;;
+    }
+    .testimony:lang(en) {
+        height: 57rem;
+    }
+} */
